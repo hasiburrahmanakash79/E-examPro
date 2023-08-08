@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Wave from 'react-wavify';
+// import Wave from 'react-wavify';
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
