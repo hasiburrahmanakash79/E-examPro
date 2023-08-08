@@ -1,9 +1,22 @@
 import { createBrowserRouter } from "react-router-dom";
+import Main from "../Layouts/Main";
+import HomePage from "../Pages/Home/HomePage/HomePage";
+import Contact from "../Pages/Contact/Contact";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Main />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+    ],
   },
 ]);
 
