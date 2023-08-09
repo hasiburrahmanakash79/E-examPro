@@ -1,8 +1,12 @@
 import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom';
 import './Nav.css'
+import examPic from '../../assets/exam.jpg'
+
 
 const Nav = () => {
+
+  
     const navbarLink_First = (
         <>
           <li><Link>Home</Link></li>
@@ -12,7 +16,7 @@ const Nav = () => {
       const navbarLink_Middle = (
         <>
     
-          <details >
+          <details className='z-[1]' >
             <summary>Courses</summary>
             <ul className="p-2 navigation-bar rounded-lg md:rounded-none">
               <li><Link>Free Courses</Link></li>
@@ -31,10 +35,11 @@ const Nav = () => {
           <li><Link>Notice</Link></li>
         </>
       )
-    
+        
+
     
       return (
-        <div className="navbar bg-base-100 navigation-bar text-white">
+        <div className="navbar z-[1] container sticky top-0 bg-base-100 navigation-bar text-white">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
