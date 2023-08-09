@@ -10,7 +10,7 @@ const DemoTestSection = () => {
         <iframe
           src=''
           className='w-11/12 rounded-lg h-3/4'
-          frameborder='0'
+          frameBorder='0'
         ></iframe>
       </div>
       <div className='space-y-2 text-center md:p-4 md:space-y-6'>
