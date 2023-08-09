@@ -1,9 +1,10 @@
 
 .swiper {
-  width: 100%;
+  width: 1140px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .swiper-slide {
   background-position: center;
   background-size: cover;
@@ -15,7 +16,7 @@
 }
 .swiper-slide-active{
   filter: blur(0px);
-  background-color: #ededed;
+  background-color: #ebe5e5;
 }
 .swiper-slide-prev,
 .swiper-slide-next
