@@ -1,10 +1,10 @@
 .awssld {
-    height: 100vh; /* Set the slider container to full viewport height */
-    overflow: hidden; /* Hide any overflowing content */
+    height: 100vh;
+    overflow: hidden; 
   }
   
   .awssld__content {
-    height: 90%; /* Make sure the slider content takes up the full container height */
+    height: 90%; 
   }
 
 
