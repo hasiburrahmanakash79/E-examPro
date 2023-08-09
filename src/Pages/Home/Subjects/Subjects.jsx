@@ -5,6 +5,17 @@ const Subjects = () => {
   return (
     <div>
       Subjects
+      <div className=" grid grid-cols-4  gap-7">
+        <a href="#">
+          <div className="flex gap-3 p-10 border hover:border-none rounded sub_card hover:text-opacity-100 hover:text-white">
+            <h1 className="text-5xl font-bold ">P</h1>
+            <span>
+              <p>Physics</p>
+              <p>121+</p>
+            </span>
+          </div>
+        </a>
+      </div>
       <div className="grid grid-cols-4 gap-5">
         <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 ">
           <div className="">

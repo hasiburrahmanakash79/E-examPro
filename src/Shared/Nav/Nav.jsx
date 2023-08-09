@@ -71,7 +71,7 @@ const Nav = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <button className='btn navigation-bar border-none text-white shadow-md'><Link>Login</Link></button>
+            <button className='btn navigation-bar border-none text-white shadow-md'><Link to="login">Login</Link></button>
           </div>
         </div>
       );
