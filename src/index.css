@@ -3,14 +3,17 @@
 @tailwind utilities;
 
 
-.footer_exam{
-    @apply font-medium cursor-pointer hover:text-orange-500 tracking-wider
+
+.footer_exam {
+    @apply text-xl font-medium cursor-pointer hover:text-orange-500 tracking-wider
 }
-.footer_ser{
-    @apply font-medium hover:underline hover:text-orange-600 transition-all duration-200 tracking-wider
+
+.footer_ser {
+    @apply text-xl font-medium hover:underline hover:text-orange-600 transition-all duration-200
 }
-.footer_res{
-    @apply font-medium hover:text-orange-600 transition-all duration-200 tracking-wider
+
+.footer_res {
+    @apply text-xl font-medium hover:text-orange-600 transition-all duration-200
 }
 .footer_social_icon{
     @apply w-8 h-8 md:mx-0 mx-auto rounded-xl bg-[#0E8EF1] hover:bg-white hover:text-[#0E8EF1] transition duration-200

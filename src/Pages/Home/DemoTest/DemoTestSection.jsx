@@ -7,11 +7,9 @@ const DemoTestSection = () => {
       {/* here will be the muted video for demo test */}
 
       <div className='inline-flex items-center justify-center rounded-lg'>
-        <iframe
-          src=''
-          className='w-11/12 rounded-lg h-3/4'
-          frameBorder='0'
-        ></iframe>
+        <video controls muted autoPlay className='w-11/12 rounded-lg h-3/4'>
+          <source src='' type='video/mp4' />
+        </video>
       </div>
       <div className='space-y-2 text-center md:p-4 md:space-y-6'>
         <h1 className='mt-4 text-2xl'>
