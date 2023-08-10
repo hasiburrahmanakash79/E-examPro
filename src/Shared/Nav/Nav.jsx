@@ -1,5 +1,7 @@
+import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom';
-import './Nav.css';
+import './Nav.css'
+import examPic from '../../assets/exam.jpg'
 
 
 const Nav = () => {
@@ -34,12 +36,12 @@ const Nav = () => {
     </>
   )
 
-  const searchData = (e) => {
-    e.preventDefault()
-    const data = document.getElementById('search').value
+const searchData=(e)=>{
+e.preventDefault()
+const data= document.getElementById('search').value
 
-    console.log(data)
-  }
+console.log(data)
+}
 
   return (
     <>
@@ -91,11 +93,11 @@ const Nav = () => {
 
       <div>
         <dialog id="my_modal_3" className="modal modal-top max-w-[400px] mx-auto mt-[68px] ">
-
+       
           <form method="dialog" className="modal-box navigation-bar ">
-            <button className="btn z-20 btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+          <button className="btn z-20 btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
             <input id='search' name='search' type="text" placeholder="Type here" className="input  top-20 z-10 input-bordered w-full max-w-xs" />
-            <button onClick={searchData} className="p-4 absolute right-14">
+            <button onClick={searchData}  className="p-4 absolute right-14">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
             </button>
           </form>
