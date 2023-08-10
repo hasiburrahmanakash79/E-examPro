@@ -1,5 +1,6 @@
 import React from "react";
 import "./Subjects.css";
+import { motion } from "framer-motion"
 
 const Subjects = () => {
   return (
@@ -16,10 +17,11 @@ const Subjects = () => {
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
           <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-10 text-center transition-all duration-500 group-hover:translate-y-0">
+            <motion.div whileHover={{scale:4}} animate={{y:20, opacity:.5}} initial={{opacity:.5}} transition={{duration:.2}} className="box"></motion.div>
             <h1 className="text-2xl font-semibold text-white group-hover:italic">
               Math
             </h1>
-            <p className="mb-3  italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <p className="mb-3  italic text-white opacity-0 transition-opacity duration-300 ">
               Lorem ipsum dolor sit amet.
             </p>
             <div className="flex text-white text-xl gap-5 mt-10">
