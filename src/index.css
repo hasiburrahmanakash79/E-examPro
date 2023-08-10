@@ -3,13 +3,16 @@
 @tailwind utilities;
 
 
-.footer_exam{
+
+.footer_exam {
     @apply text-xl font-medium cursor-pointer hover:text-orange-500 tracking-wider
 }
-.footer_ser{
+
+.footer_ser {
     @apply text-xl font-medium hover:underline hover:text-orange-600 transition-all duration-200
 }
-.footer_res{
+
+.footer_res {
     @apply text-xl font-medium hover:text-orange-600 transition-all duration-200
 }
 .footer_social_icon{
