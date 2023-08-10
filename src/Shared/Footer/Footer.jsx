@@ -6,7 +6,7 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import ceo from "../../assets/user_img.png"
 const Footer = () => {
     return (
-        <div className='relative mt-6'>
+        <div className='relative '>
             {/* <Wave className='h-24 absolute -top-8 ' mask="url(#mask)" fill="url(#gradient)" >
                 <defs>
                     <linearGradient id="gradient" gradientTransform="rotate(90)">
@@ -18,7 +18,7 @@ const Footer = () => {
                     </mask>
                 </defs>
             </Wave> */}
-            <div className='px-8 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 space-y-6 bg-slate-100 py-16 bg-gradient-to-r from-slate-900 to-zinc-900'>
+            <div className='px-8 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 space-y-6 bg-slate-100 py-16 navigation-bar bg-gradient-to-r from-slate-900 to-zinc-900'>
                 <div className=' text-center text-white space-y-3'>
                     <img src={logo} alt="" className='md:w-auto w-3/4 mx-auto' />
                     <p className='text-lg '>Descriptors</p>
