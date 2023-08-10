@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ResultPage from './ResultPage'
 import QuestionsPage from './QuestionsPage'
 import ProgressBar from './ProgressBar'
+import './demoTest.css'
 
 const DemoTests = () => {
   // dummy question array
@@ -32,6 +33,8 @@ const DemoTests = () => {
   const [questions, setQuestions] = useState(tempQuestions)
   const [userAnswers, setUserAnswers] = useState({})
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
+  // disabling next button if not clicked any ans
+  const [isAnswered, setIsAnswered] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   // handling selected answer
   const handleSelectedAnswer = (questionId, selectedChoiceId) => {
@@ -40,26 +43,28 @@ const DemoTests = () => {
       [questionId]: selectedChoiceId
     }))
     setCurrentQuestionIndex(prevIndex => prevIndex + 1)
+    // setting the disabled button to enabled
+    setIsAnswered(true)
   }
-  // // btn for previous question
-  // const handlePreviousQuestion = () => {
-  //   if (currentQuestionIndex > 0) {
-  //     setCurrentQuestionIndex(prevIndex => prevIndex - 1)
-  //   }
-  // }
   const handleSubmit = () => {
     setIsSubmitted(true)
   }
   const totalQuestions = questions.length
   const answeredQuestions = Object.keys(userAnswers).length
+
+  // sending data to result page
   if (isSubmitted) {
     return <ResultPage questions={questions} userAnswers={userAnswers} />
   }
   const currentQuestion = questions[currentQuestionIndex]
+  // last question
+  const isLastQuestion = currentQuestionIndex === totalQuestions - 1
+
   // progressbar
   const currentProgress = (answeredQuestions / totalQuestions) * 100
+
   return (
-    <section className='w-full h-[80vh] rounded-lg shadow-lg md:w-96 mx-auto mt-4 md:mt-20 md:space-y-8'>
+    <section className='relative w-full h-[80vh] rounded-lg shadow-lg md:w-3/5 mx-auto mt-4 md:mt-10 md:space-y-8 question_card'>
       {currentQuestion && (
         <>
           <ProgressBar percent={currentProgress} />
@@ -67,23 +72,40 @@ const DemoTests = () => {
             question={currentQuestion}
             selectedChoice={userAnswers[currentQuestion.id]}
             onAnswerSelected={handleSelectedAnswer}
+            isLastQuestion={isLastQuestion}
           />
-          {currentQuestionIndex > 0 && (
-            <button
-              onClick={() => setCurrentQuestionIndex(currentQuestionIndex - 1)}
-            >
-              Previous Question
-            </button>
-          )}
-          {currentQuestionIndex == totalQuestions - 1 ? (
-            <button onClick={handleSubmit}>Submit</button>
-          ) : (
-            <button
-              onClick={() => setCurrentQuestionIndex(currentQuestionIndex + 1)}
-            >
-              Next Question
-            </button>
-          )}
+          <div className='relative flex justify-between w-11/12 mx-auto '>
+            {currentQuestionIndex > 0 && (
+              <button
+                className='btn_quiz navigation-bar'
+                onClick={() =>
+                  setCurrentQuestionIndex(currentQuestionIndex - 1)
+                }
+              >
+                Previous Question
+              </button>
+            )}
+            {currentQuestionIndex == totalQuestions - 1 ? (
+              <button
+                className='btn_quiz navigation-bar'
+                onClick={handleSubmit}
+              >
+                Submit
+              </button>
+            ) : (
+              <button
+                className='absolute right-0 navigation-bar btn_quiz'
+                disabled={!isAnswered}
+                onClick={() => {
+                  setCurrentQuestionIndex(currentQuestionIndex + 1)
+                  // TODO:issue::when going back and forth between two questions after answering them, i seem to lose the logic of disabling and enabling the next btn
+                  // setIsAnswered()
+                }}
+              >
+                Next Question
+              </button>
+            )}
+          </div>
         </>
       )}
     </section>
