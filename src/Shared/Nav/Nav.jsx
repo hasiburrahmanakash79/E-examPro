@@ -31,7 +31,7 @@ const Nav = () => {
     <>
       <li><Link>Instructors</Link></li>
       <li><Link>Blog</Link></li>
-      <li><Link>Contuct Us</Link></li>
+      <li><Link to={'/contact'}>Contuct Us</Link></li>
       <li><Link>Notice</Link></li>
     </>
   )
@@ -44,8 +44,8 @@ console.log(data)
 }
 
   return (
-    <div >
-      <div className="navbar z-[1] container sticky top-0 bg-base-100 navigation-bar text-white">
+    <>
+      <div className="navbar z-[20] sticky top-0  container bg-base-100 navigation-bar text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -104,7 +104,7 @@ console.log(data)
         </dialog>
       </div>
 
-    </div>
+    </>
   );
 };
 
