@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from "../../assets/logo.png"
 // import Wave from 'react-wavify';
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-
+import ceo from "../../assets/user_img.png"
 const Footer = () => {
     return (
         <div className='relative mt-6'>
@@ -18,11 +19,13 @@ const Footer = () => {
                 </defs>
             </Wave> */}
             <div className='px-8 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 space-y-3 bg-slate-100 py-16 bg-gradient-to-r from-slate-900 to-zinc-900'>
-                <div className='text-center text-white space-y-3'>
-                    <h2 className='text-2xl md:text-3xl font-serif font-extrabold tracking-wider text-white italic'><span className=''>E</span>-<span>Exam</span><span className='text-orange-600'>Pro</span></h2>
+                <div className=' text-center text-white space-y-3'>
+                    <img src={logo} alt="" className='md:w-auto w-3/4 mx-auto'/>
                     <p className='text-lg '>Descriptors</p>
                     <p className='text-lg text-justify'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis totam numquam tenetur illo iste repudiandae odit eligendi alias at ullam.</p>
-                    <p className='w-20 h-20 pt-3 mx-auto rounded-lg bg-sky-400'><span className='mt-6'>CEO Img</span></p>
+                    <div className='w-28 h-28 mx-auto rounded-xl object-cover'>
+                        <img src={ceo} alt="" className='rounded-xl'/>
+                    </div>
                 </div>
                 <div className='text-center text-white md:space-y-3 space-x-1' >
                     <h2 className='text-2xl font-sans font-semibold  pb-4'>Exam Platform</h2>
@@ -48,14 +51,14 @@ const Footer = () => {
                     <Link to='' className='footer_res'>Groups Chat</Link> <br />
                     <Link to='' className='footer_res'>Technology</Link> <br />
                     <div className='md:flex items-center justify-center gap-3 md:mt-5 mt-3 text-center space-y-3'>
-                        <p className='footer_social_icon mt-[12px]'>
-                            <FaFacebookF className='w-6 h-6 mx-auto md:pt-0 translate-y-1/4' />
+                        <p className='footer_social_icon md:mt-4'>
+                            <FaFacebookF className='w-10 h-10 mx-auto md:pt-0 translate-y-1/4' />
                         </p>
                         <p className='footer_social_icon'>
-                            <FaTwitter className='w-6 h-6 mx-auto md:pt-0 translate-y-1/4' />
+                            <FaTwitter className='w-10 h-10 mx-auto md:pt-0 translate-y-1/4' />
                         </p>
                         <p className='footer_social_icon'>
-                            <FaLinkedinIn className='w-6 h-6 mx-auto md:pt-0 translate-y-1/4' />
+                            <FaLinkedinIn className='w-10 h-10 mx-auto md:pt-0 translate-y-1/4' />
                         </p>
                     </div>
                 </div>

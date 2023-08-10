@@ -2,12 +2,14 @@ import { useState, useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import SocialLogin from "../../../Hooks/SocialLogin/SocialLogin";
+import { AuthContext } from "../../../Provider/AuthProvider";
 
 const Registration = () => {
   const [passShow, setPassShow] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
+  const { signUpUser, updateUserInfo } = useContext(AuthContext);
 
   const {
     register,
@@ -15,8 +17,15 @@ const Registration = () => {
     watch,
     formState: { errors },
   } = useForm();
+  const password = watch("password");
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    signUpUser(data.email, data.password).then((result) => {
+      const loggedUser = result.user;
+      navigate(from, { replace: true });
+      console.log(loggedUser);
+    });
+  };
   return (
     <div className="Auth_bg">
       <div className="hero min-h-screen">
@@ -67,12 +76,6 @@ const Registration = () => {
                         minLength: {
                           value: 6,
                           message: "Password must be at least 6 characters",
-                        },
-                        pattern: {
-                          value:
-                            /(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/,
-                          message:
-                            "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character",
                         },
                       })}
                       type={passShow ? "text" : "password"}
