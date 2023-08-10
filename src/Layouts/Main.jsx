@@ -45,12 +45,14 @@ const Main = () => {
                 </div>
             </div>
 {/* className={`${showMainContent ? 'z-[10]' : 'hidden'} `} */}
-            <div className={`transition-opacity duration-700 ${showMainContent ? ' absolute top-0  opacity-100' : 'opacity-0'} `}>
-                <Nav />
+
+     <div className={`transition-opacity duration-700 ${showMainContent ? ' absolute top-0  opacity-100' : 'opacity-0'} navigation-bar2 `}>
+                <Nav  />
                 <Outlet />
                 <Footer />
             </div>
-        </div>
+     </div>
+
     );
 };
 

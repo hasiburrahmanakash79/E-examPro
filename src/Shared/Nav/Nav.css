@@ -14,3 +14,20 @@
         background-position: 0 50%;
     }
 }
+
+.navigation-bar2 {
+    background: linear-gradient(45deg, rgb(113, 7, 212), rgb(171, 43, 245), rgb(113, 7, 212));
+    background-size: 200% 200%;
+    animation: colors 22s ease-in-out infinite;
+}
+@keyframes colors{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    0%{
+        background-position: 0 50%;
+    }
+}
