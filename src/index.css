@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.footer_exam{
+    @apply text-xl font-medium cursor-pointer hover:text-orange-500 tracking-wider
+}
+.footer_ser{
+    @apply text-xl font-medium hover:underline hover:text-orange-600 transition-all duration-200
+}
+.footer_res{
+    @apply text-xl font-medium hover:text-orange-600 transition-all duration-200
+}
+.footer_social_icon{
+    @apply w-12 h-12 md:mx-0 mx-auto rounded-xl bg-slate-200 hover:bg-orange-500 hover:text-white text-[#0E8EF1] transition duration-200
+}
