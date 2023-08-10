@@ -13,7 +13,6 @@ const Banner = () => {
       play={true}
       cancelOnInteraction={false}
       interval={6000}
-      animation="foldOutAnimation"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -23,7 +22,7 @@ const Banner = () => {
           src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
           className="w-full h-full"
         />
-        <div className="absolute flex flex-col items-center justify-center w-full h-full bg-gradient-to-r from-black to-purple-950 opacity-60">
+        <div className="absolute flex flex-col items-center justify-center w-full h-full bg-gradient-to-r from-[#582f6e] to-[rgba(151, 40, 202, 0.9)] ">
           <h4 className="mb-2 md:mb-6 text-lg md:text-3xl text-white text-center">
             Get Ready For The Battle Of Examination
           </h4>
@@ -45,7 +44,7 @@ const Banner = () => {
           src="https://images.unsplash.com/photo-1452830978618-d6feae7d0ffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
           className="w-full h-full"
         />
-        <div className="absolute flex flex-col items-center justify-center w-full h-full bg-gradient-to-r from-purple-950 to-black opacity-60">
+        <div className="absolute flex flex-col items-center justify-center w-full h-full bg-gradient-to-r  from-[#582f6e] to-[rgba(21, 21, 21, 0)]">
         <h4 className="mb-2 md:mb-6 text-lg md:text-3xl text-white text-center">
             Get Ready For The Battle Of Examination
           </h4>
@@ -67,7 +66,7 @@ const Banner = () => {
           src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
           className="w-full h-full"
         />
-        <div className="absolute flex flex-col items-center justify-center w-full h-full bg-gradient-to-r from-black to-purple-950 opacity-60">
+        <div className="absolute flex flex-col items-center justify-center w-full h-full bg-gradient-to-r  from-[#582f6e] to-[rgba(21, 21, 21, 0)]">
         <h4 className="mb-2 md:mb-6 text-lg md:text-3xl text-white text-center">
             Get Ready For The Battle Of Examination
           </h4>
@@ -89,7 +88,7 @@ const Banner = () => {
           src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
           className="w-full h-full"
         />
-        <div className="absolute flex flex-col items-center justify-center w-full h-full bg-gradient-to-r from-purple-950 to-black opacity-60">
+        <div className="absolute flex flex-col items-center justify-center w-full h-full bg-gradient-to-r  from-[#582f6e] to-[rgba(21, 21, 21, 0)]">
           <h4 className="mb-2 md:mb-6 text-lg md:text-3xl text-white text-center">
             Get Ready For The Battle Of Examination
           </h4>

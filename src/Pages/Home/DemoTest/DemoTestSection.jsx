@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const DemoTestSection = () => {
-  
   return (
     <section className='grid w-full grid-cols-1 mx-auto my-6 md:w-11/12 md:grid-cols-2 h-96'>
       {/* here will be the muted video for demo test */}
