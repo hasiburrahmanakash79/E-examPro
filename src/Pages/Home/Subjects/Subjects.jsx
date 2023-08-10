@@ -3,8 +3,8 @@ import "./Subjects.css";
 
 const Subjects = () => {
   return (
-    <div>
-      Subjects
+    <div className="p-5">
+      <h1 className="text-center text-4xl font-bold py-10">Out Top subjects</h1>
       <div className="grid grid-cols-4 gap-5">
         <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 ">
           <div className="">

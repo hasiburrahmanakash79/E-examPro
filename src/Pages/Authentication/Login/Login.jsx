@@ -78,7 +78,7 @@ const Login = () => {
                     {...register("email", { required: true })}
                     type="email"
                     placeholder="email"
-                    className="input input-bordered"
+                    className="input input-bordered bg-transparent"
                   />
                   {errors.email && (
                     <span className="text-red-500 mt-1">
@@ -94,7 +94,7 @@ const Login = () => {
                     {...register("password", { required: true })}
                     type={passShow ? "text" : "password"}
                     placeholder="enter your password"
-                    className="input input-bordered"
+                    className="input input-bordered bg-transparent"
                   />
                   <div className=" flex justify-between mb-5">
                     <a onClick={() => setPassShow(!passShow)}>
@@ -128,7 +128,7 @@ const Login = () => {
                   onChange={handleInputChange}
                   type="text"
                   placeholder="Type Number"
-                  className="input input-sm w-[117px] md:w-full mx-auto input-bordered"
+                  className="input input-sm w-[117px] md:w-full mx-auto input-bordered bg-transparent"
                 />
               </div>
               <div className="text-center mb-7">

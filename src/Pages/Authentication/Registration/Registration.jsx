@@ -39,8 +39,8 @@ const Registration = () => {
                 Registration
               </h1>
             </div>
-            <div className="card-body ">
-              <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="card-body text-white">
+              <form onSubmit={handleSubmit(onSubmit)} className="!text-white">
                 <div className="md:grid grid-cols-2 gap-3">
                   <div className="form-control">
                     <label className="label">
@@ -50,7 +50,7 @@ const Registration = () => {
                       {...register("name", { required: true })}
                       type="text"
                       placeholder="Enter your name"
-                      className="input input-bordered"
+                      className="input input-bordered bg-transparent"
                     />
                     {errors.name && <span>This field is required</span>}
                   </div>
@@ -62,7 +62,7 @@ const Registration = () => {
                       {...register("email", { required: true })}
                       type="email"
                       placeholder="Enter your email"
-                      className="input input-bordered"
+                      className="input input-bordered bg-transparent"
                     />
                     {errors.email && <span>This field is required</span>}
                   </div>
@@ -80,7 +80,7 @@ const Registration = () => {
                       })}
                       type={passShow ? "text" : "password"}
                       placeholder="Enter your password"
-                      className="input input-bordered"
+                      className="input input-bordered bg-transparent"
                     />
                     <label className="label">
                       <a className="label-text-alt link link-hover">
@@ -110,7 +110,7 @@ const Registration = () => {
                       })}
                       type={passShow ? "text" : "password"}
                       placeholder="Confirm password"
-                      className="input input-bordered"
+                      className="input input-bordered bg-transparent"
                     />
                     {errors.confirm && <span>{errors.confirm.message}</span>}
                   </div>
@@ -122,7 +122,7 @@ const Registration = () => {
                       {...register("number", { required: true })}
                       type="number"
                       placeholder="+880"
-                      className="input input-bordered"
+                      className="input input-bordered bg-transparent"
                     />
                     {errors.number && <span>This field is required</span>}
                   </div>
@@ -134,7 +134,7 @@ const Registration = () => {
                       {...register("photo", { required: true })}
                       type="text"
                       placeholder="Photo URL"
-                      className="input input-bordered"
+                      className="input input-bordered bg-transparent"
                     />
                   </div>
                 </div>
@@ -146,7 +146,7 @@ const Registration = () => {
                     {...register("address", { required: true })}
                     type="text"
                     placeholder="Enter your Address"
-                    className="input input-bordered"
+                    className="input input-bordered bg-transparent"
                   />
                 </div>
                 <div className="form-control mt-5">
