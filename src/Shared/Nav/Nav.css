@@ -1,5 +1,5 @@
 .navigation-bar{
-    background: linear-gradient(45deg,#7107d4,#ab2bf5fd,#7107d4);
+    background: linear-gradient(45deg,rgb(17, 9, 83), rgb(54, 2, 102), rgb(4, 64, 114), rgb(73, 1, 114));
     background-size: 200% 200%;
     animation: color 22s ease-in-out infinite;
 }
@@ -10,15 +10,16 @@
     50%{
         background-position: 100% 50%;
     }
-    0%{
+    100%{
         background-position: 0 50%;
     }
 }
 
 .navigation-bar2 {
-    background: linear-gradient(45deg, rgb(113, 7, 212), rgb(171, 43, 245), rgb(113, 7, 212));
-    background-size: 200% 200%;
-    animation: colors 22s ease-in-out infinite;
+    background: linear-gradient(45deg,rgb(17, 9, 83), rgb(54, 2, 102), rgb(4, 64, 114), rgb(73, 1, 114),rgb(17, 9, 83), rgb(54, 2, 102));
+    background-size: 1000% 1000%;
+    background-repeat: no-repeat;
+    animation: colors 12s ease-in-out infinite;
 }
 @keyframes colors{
     0%{
@@ -27,7 +28,7 @@
     50%{
         background-position: 100% 50%;
     }
-    0%{
+    100%{
         background-position: 0 50%;
     }
 }
