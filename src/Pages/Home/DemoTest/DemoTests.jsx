@@ -59,6 +59,8 @@ const DemoTests = () => {
   const currentQuestion = questions[currentQuestionIndex]
   // last question
   const isLastQuestion = currentQuestionIndex === totalQuestions - 1
+  const hasUserSelectedLastQuestion =
+    isLastQuestion && userAnswers[currentQuestion.id]
 
   // progressbar
   const currentProgress = (answeredQuestions / totalQuestions) * 100
@@ -89,13 +91,16 @@ const DemoTests = () => {
               <button
                 className='btn_quiz navigation-bar'
                 onClick={handleSubmit}
+                disabled={!hasUserSelectedLastQuestion}
               >
                 Submit
               </button>
             ) : (
               <button
                 className='absolute right-0 navigation-bar btn_quiz'
-                disabled={!isAnswered}
+                disabled={
+                  !isAnswered || currentQuestionIndex === totalQuestions - 1
+                }
                 onClick={() => {
                   setCurrentQuestionIndex(currentQuestionIndex + 1)
                   // TODO:issue::when going back and forth between two questions after answering them, i seem to lose the logic of disabling and enabling the next btn
