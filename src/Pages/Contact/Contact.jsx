@@ -62,7 +62,7 @@ const Contact = () => {
 
                     </div>
                     <div className="mt-6">
-                        <button className="btn flex  hover:-translate-y-1 btn-sm hover:bg-slate-900 bg-slate-800 text-white "><span>Send Message</span> <HiRocketLaunch></HiRocketLaunch></button>
+                        <button className="btn flex  hover:-translate-y-1 btn-sm navigation-bar text-white "><span>Send Message</span> <HiRocketLaunch></HiRocketLaunch></button>
                         <p className='text-green-600 mt-3 z-20'>{msg}</p>
                     </div>
                 </div>
