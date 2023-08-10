@@ -1,9 +1,9 @@
 import React from 'react';
-
+import "../Contact/Contact.css";
 const Contact = () => {
     return (
         <div>
-            <h1>contacts</h1>
+
         </div>
     );
 };
