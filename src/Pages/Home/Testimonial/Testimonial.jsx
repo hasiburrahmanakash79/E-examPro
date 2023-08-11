@@ -11,6 +11,7 @@ import user from "../../../assets/user_img.png";
 const Testimonial = () => {
     return (
         <div className='bg-gradient-to-tr from-[#0B0728] to-[#491A66] py-10 mt-6'>
+            <h1 className="text-center text-4xl font-bold py-7">What Our Users Say</h1>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}

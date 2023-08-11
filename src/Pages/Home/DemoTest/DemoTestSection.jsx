@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom'
 
 const DemoTestSection = () => {
   return (
-    <section className='grid w-full grid-cols-1 mx-auto my-6 md:w-11/12 md:grid-cols-2 h-96'>
+    <section >
       {/* here will be the muted video for demo test */}
-
-      <div className='inline-flex items-center justify-center rounded-lg'>
+      <h1 className="text-center text-4xl font-bold py-10">Demo Exam</h1>
+      <div className='grid w-full grid-cols-1 mx-auto my-6 md:w-11/12 md:grid-cols-2 h-96'>
+        <div className='flex items-center justify-center rounded-lg'>
         <video controls muted autoPlay className='w-11/12 rounded-lg h-3/4'>
           <source src='' type='video/mp4' />
         </video>
@@ -20,10 +21,12 @@ const DemoTestSection = () => {
           possimus facilis reprehenderit illum recusandae consequatur, excepturi
           sint inventore voluptatum.
         </p>
-        <Link to='/demo-test' className='rounded-full btn btn-accent'>
+        <Link to='/demo-test' className='rounded-full btn navigation-bar'>
           Explore How We Take Exams
         </Link>
       </div>
+      </div>
+      
     </section>
   )
 }

@@ -32,8 +32,8 @@ const Banner = () => {
           
           <h1 className="md:mb-10 font-semibold text-white text-2xl  md:text-7xl">E-ExamPro</h1>
 
-          <button className="mt-4 md:mt-8 text-sm md:text-lg font-bold rounded-full btn btn-sm md:btn-md btn-warning">
-            Try Demo Exam!
+          <button className="mt-4 md:mt-8 text-sm md:text-lg font-bold rounded-full btn btn-sm md:btn-md navigation-bar">
+            Explore Exams 
           </button>
         </div>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"></div>
@@ -54,8 +54,8 @@ const Banner = () => {
           
           <h1 className="md:mb-10 font-semibold text-white text-2xl  md:text-7xl">E-ExamPro</h1>
 
-          <button className="mt-4 md:mt-8 text-sm md:text-lg font-bold rounded-full btn btn-sm md:btn-md btn-warning">
-            Try Demo Exam!
+          <button className="mt-4 md:mt-8 text-sm md:text-lg font-bold rounded-full btn btn-sm md:btn-md navigation-bar">
+            Explore Exams 
           </button>
         </div>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"></div>
@@ -76,8 +76,8 @@ const Banner = () => {
           
           <h1 className="md:mb-10 font-semibold text-white text-2xl  md:text-7xl">E-ExamPro</h1>
 
-          <button className="mt-4 md:mt-8 text-sm md:text-lg font-bold rounded-full btn btn-sm md:btn-md btn-warning">
-            Try Demo Exam!
+          <button className="mt-4 md:mt-8 text-sm md:text-lg font-bold rounded-full btn btn-sm md:btn-md navigation-bar">
+            Explore Exams 
           </button>
         </div>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"></div>
@@ -98,8 +98,8 @@ const Banner = () => {
           
           <h1 className="md:mb-10 font-semibold text-white text-2xl  md:text-7xl">E-ExamPro</h1>
 
-          <button className="mt-4 md:mt-8 text-sm md:text-lg font-bold rounded-full btn btn-sm md:btn-md btn-warning">
-            Try Demo Exam!
+          <button className="mt-4 md:mt-8 text-sm md:text-lg font-bold rounded-full btn btn-sm md:btn-md navigation-bar">
+            Explore Exams 
           </button>
         </div>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"></div>
