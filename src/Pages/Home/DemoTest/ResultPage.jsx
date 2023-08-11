@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ResultPage = ({ questions, userAnswers }) => {
   console.log(userAnswers)
@@ -28,6 +29,10 @@ const ResultPage = ({ questions, userAnswers }) => {
             </div>
           )
         })}
+
+        <Link to='/' className='btn_quiz navigation-bar'>
+          Go Back
+        </Link>
       </div>
       <div className='order-1'>ha</div>
     </div>
