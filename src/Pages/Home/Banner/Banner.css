@@ -19,3 +19,8 @@
 .awssld__controls:hover .awssld__prev {
   opacity: 1;
 }
+@media (max-width: 767px) {
+  .awssld {
+    height: 50%; 
+  }
+}

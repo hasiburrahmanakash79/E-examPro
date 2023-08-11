@@ -66,7 +66,7 @@ const DemoTests = () => {
   const currentProgress = (answeredQuestions / totalQuestions) * 100
 
   return (
-    <section className='relative w-full h-[80vh] rounded-lg shadow-lg md:w-3/5 mx-auto mt-4 md:mt-10 md:space-y-8 question_card'>
+    <section className='relative w-full h-[80vh] rounded-lg shadow-lg md:w-3/5 mx-auto mt-4 md:mt-10 md:space-y-8 question_card' >
       {currentQuestion && (
         <>
           <ProgressBar percent={currentProgress} />

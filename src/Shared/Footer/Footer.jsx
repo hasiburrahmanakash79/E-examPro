@@ -7,20 +7,22 @@ const Footer = () => {
       <div className="px-8 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 space-y-6  border-b border-slate-800 pb-4">
         <div className=" text-center text-white">
           <img src={logo} alt="" className="md:w-auto w-2/4 mx-auto" />
-          <p className="text-sm text-justify">
+          <p className="text-sm text-justify md:mt-0 mt-2">
             It’s a special day when our beloved someone like any of our
             students, friends, College or University have to sit for their
             exams. Whether it is a exam for school, college just tell them to
             believe in themselves and want success and good performance.
           </p>
-          <div className="md:flex items-center justify-center gap-5 mt-7">
-            <p className="bg-white text-black p-3 rounded-full">
+          <div className=" mx-auto mt-3 w-1/2 md:w-1/3 grid grid-cols-3">
+          <div>
+          <p className="bg-white w-[30px] h-[30px] flex justify-center items-center text-black  rounded-full">
               <FaFacebookF />
             </p>
-            <p className="bg-white text-black p-3 rounded-full">
+          </div>
+            <p className="bg-white w-[30px] h-[30px] flex justify-center items-center text-black  rounded-full">
               <FaTwitter />
             </p>
-            <p className="bg-white text-black p-3 rounded-full">
+            <p className="bg-white w-[30px] h-[30px] flex justify-center items-center text-black  rounded-full">
               <FaLinkedinIn />
             </p>
           </div>
