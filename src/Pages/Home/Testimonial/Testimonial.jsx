@@ -10,7 +10,7 @@ import user from "../../../assets/user_img.png";
 
 const Testimonial = () => {
     return (
-        <div className='bg-gradient-to-tr from-[#0B0728] to-[#491A66] py-10 mt-6'>
+        <div className=' py-10 mt-6'>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
