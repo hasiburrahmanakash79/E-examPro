@@ -3,7 +3,8 @@ import Main from '../Layouts/Main'
 import HomePage from '../Pages/Home/HomePage/HomePage'
 
 import Contact from '../Pages/Contact/Contact'
-import DemoTests from '../Pages/Home/DemoTest/DemoTests'
+import QuizHomePage from '../Pages/Home/DemoTest/QuizHomePage'
+import ResultPage from '../Pages/Home/DemoTest/ResultPage'
 import Login from '../Pages/Authentication/Login/Login'
 import Registration from '../Pages/Authentication/Registration/Registration'
 
@@ -18,7 +19,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/demo-test',
-        element: <DemoTests />
+        element: <QuizHomePage />
+      },
+      {
+        path: '/home-quiz-result',
+        element: <ResultPage />
       },
       {
         path: '/contact',
@@ -28,11 +33,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/login',
-    element: <Login/>
+    element: <Login />
   },
   {
     path: '/signUp',
-    element: <Registration/>
+    element: <Registration />
   }
 ])
 
