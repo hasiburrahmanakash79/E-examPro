@@ -14,7 +14,7 @@ const DemoTestSection = () => {
               <source src='' type='video/mp4' />
             </video>
           </div>
-          <div className='space-y-2 text-center md:p-4 md:space-y-6'>
+          <div className='space-y-2 text-center md:p-4 md:space-y-6 text-white'>
             <h1 className='mt-4 text-2xl'>
               Lorem ipsum dolor sit, amet consectetur.
             </h1>

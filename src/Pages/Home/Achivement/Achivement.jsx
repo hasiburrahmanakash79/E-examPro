@@ -11,7 +11,7 @@ const Achivement = () => {
   return (
 
 
-    <section ref={ref} className='p-5'>
+    <section ref={ref} className='p-5 text-white'>
 <h1 className="text-center text-slate-200 text-4xl font-bold  mt-5">Our Achievement</h1>
       <div className=' mt-10 pt-2 gap-20 md:flex justify-evenly md:mt-28 items-end rounded-xl ' style={{background:'linear-gradient(45deg,rgb(17, 9, 83), rgb(54, 2, 102), rgb(4, 64, 114), rgb(73, 1, 114))'}} >
 
