@@ -6,7 +6,7 @@ const DemoTestSection = () => {
     <section className='grid w-full grid-cols-1 mx-auto my-6 md:w-11/12 md:grid-cols-2 h-96'>
       {/* here will be the muted video for demo test */}
 
-      <div className='inline-flex items-center justify-center rounded-lg'>
+      <div className='flex items-center justify-center rounded-lg'>
         <video controls muted autoPlay className='w-11/12 rounded-lg h-3/4'>
           <source src='' type='video/mp4' />
         </video>

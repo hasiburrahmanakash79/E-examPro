@@ -9,7 +9,7 @@
 @tailwind utilities;
 
 .footer_exam {
-  @apply text-xl font-medium cursor-pointer hover:text-orange-500 tracking-wider;
+  @apply cursor-pointer hover:text-orange-500 tracking-wider;
 }
 .footer_ser {
   @apply text-xl font-medium hover:underline hover:text-orange-600 transition-all duration-200;
