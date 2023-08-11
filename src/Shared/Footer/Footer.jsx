@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="relative mt-6 bg-gradient-to-r from-slate-900 to-zinc-900 pt-11">
+    <div className="relative navigation-bar pt-11">
       <div className="px-8 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 space-y-6  border-b border-slate-800 pb-4">
         <div className=" text-center text-white">
           <img src={logo} alt="" className="md:w-auto w-2/4 mx-auto" />

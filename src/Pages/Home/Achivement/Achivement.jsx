@@ -12,8 +12,8 @@ const Achivement = () => {
 
 
     <section ref={ref} className='p-5'>
-      <h1 className="text-center text-4xl font-bold py-10">Out Achievement</h1>
-      <div className=' mt-10 pt-5 gap-20 md:flex justify-evenly md:mt-40 items-end rounded-xl  bg-slate-600'>
+      <h1 className="text-center text-4xl font-bold pt-10">Out Achievement</h1>
+      <div className=' mt-10 pt-5 gap-20 md:flex justify-evenly md:mt-28 items-end rounded-xl  bg-slate-600'>
 
         <div className='px-5 md:px-0 full md:w-1/2 '>
           <div>
