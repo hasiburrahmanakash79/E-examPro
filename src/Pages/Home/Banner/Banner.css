@@ -1,4 +1,5 @@
 .awssld {
+  z-index: 0;
     height: 100vh;
     overflow: hidden; 
   }
@@ -17,4 +18,9 @@
 .awssld__controls:hover .awssld__next,
 .awssld__controls:hover .awssld__prev {
   opacity: 1;
+}
+@media (max-width: 767px) {
+  .awssld {
+    height: 50%; 
+  }
 }

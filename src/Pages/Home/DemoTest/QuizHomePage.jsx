@@ -78,7 +78,7 @@ const QuizHomePage = () => {
     return <ResultPage questions={questions} userAnswers={userAnswers} />
   }
   return (
-    <section className='w-full h-screen md:p-6 '>
+    <section className='w-full h-screen md:p-6 navigation-bar2'>
       <div className='mx-auto rounded-lg shadow-lg question_card h-fit md:w-3/5 md:space-y-8'>
         {currentQuestion && (
           <>

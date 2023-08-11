@@ -5,6 +5,8 @@ import HomePage from '../Pages/Home/HomePage/HomePage'
 import Contact from '../Pages/Contact/Contact'
 import QuizHomePage from '../Pages/Home/DemoTest/QuizHomePage'
 import ResultPage from '../Pages/Home/DemoTest/ResultPage'
+import Login from '../Pages/Authentication/Login/Login'
+import Registration from '../Pages/Authentication/Registration/Registration'
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
         element: <Contact></Contact>
       }
     ]
+  },
+  {
+    path: '/login',
+    element: <Login />
+  },
+  {
+    path: '/signUp',
+    element: <Registration />
   }
 ])
 
